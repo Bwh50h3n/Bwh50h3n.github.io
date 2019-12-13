@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quick loop demo</title>
+
+	<style>
+
+		div{
+		font-size: 50px;
+		}
+	</style>
+</head>
+<body>
+
+	<div>DIV1</div>
+
+	<div>DIV2</div>
+
+	<div>DIV3</div>
+
+	<div>DIV4</div>
+
+	<div>DIV5</div>
+
+	<div>DIV6</div>
+
+	<div>DIV7</div>
+
+<script>
+
+	datalist = document.getElementsByTagName('div');
+	console.log(datalist);
+
+	list = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+	for (i = 0; i<datalist.length; i = i+1) {
+		datalist[i].innerHTML= list[i];
+	}
+</script>
+
+</body>
+</html>
