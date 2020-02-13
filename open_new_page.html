@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+.buttonleft {
+  background-color: lightgray;
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+</style>
+
+
+<body>
+
+<p>Click the arrow keys to open youtube.</p>
+<button id = "button" class="buttonleft">youtube</button>
+
+<script src="scriptfeb7.js"></script>
+
+<script>
+document.getElementById("button").onclick = function() {openutube()};
+function openutube(){
+	window.open("http://www.youtube.com/");
+}
+</script>
+
+</body>
+</html>

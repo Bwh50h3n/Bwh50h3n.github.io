@@ -1,0 +1,1 @@
+Alert("file 1 script");
