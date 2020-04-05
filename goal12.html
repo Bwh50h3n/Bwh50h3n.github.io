@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>template</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {margin:0; color: lightgray; font-family:"Open sans";}
+
+html {background-color: lightgray;}
+
+ul {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height:100px;
+  background-color: white;
+}
+
+.buttonleft {
+  background-color: #FFFFFF;
+  color:black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.buttonleft span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+
+.buttonleft span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -90px;
+  transition: 0.4s;
+}
+
+.buttonleft:hover span {
+  padding-left: 25px;
+}
+
+.buttonleft:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.buttonright {
+  background-color: #FFFFFF;
+  color:black;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.buttonright span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+
+.buttonright span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  left: 90px;
+  transition: 0.4s;
+}
+
+.buttonright:hover span {
+  padding-right: 25px;
+}
+
+.buttonright:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#title {
+  position: relative;
+  left: 430px;
+  color:green;
+  font-size: 20px;
+  font-family:"Open sans";
+  font-weight: bold;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 3px;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.paraimg{
+  background-image: url("websiteimages/goal12titleimage.jpg");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto
+  padding:0;
+}
+
+
+.bar {
+}
+
+#parabar{
+  background-color: green;
+}
+.textbox{
+  top:1000px;
+  text-align:left;
+  width:100%;
+  height:500px;
+}
+ul.topnav li a:hover:not(.active)
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+</style>
+</head>
+<body>
+
+<ul class="topnav">
+  <li><a href="#" class="buttonleft"><span>Goal 13 page</span></a></li>
+  <li><a id="title">Goal 12: Responcible Consumption</a></li>
+  <li style="float:right"><a href="#" class="buttonright"><span>Goal 12 page</span></a></li>
+</ul>
+<div class="paraimg"></div>
+
+<div class="bar">
+      <p>hi</p>
+</div>
+<div class = "textbox">
+    <p>LOL</p>
+</div>
+</body>
+</html>
