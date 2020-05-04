@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="commoncss.css">
+</head>
+<style>
+	.grid-item {
+	  text-align: center;
+	  padding: 20px;
+	  font-size: 30px;
+	}
+
+	.item1 {
+	  grid-column: 1 / span 3;
+	  grid-row: 1/span 6;
+	}
+
+	.item2 {
+	  grid-column: 4/ span 3;
+	  grid-row: 1 / span 6;
+	}
+
+	.paraimage {
+	  background-image: url("images/1_Hydrogen.jpg");
+	  min-height: 500px; 
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: auto;
+	}
+</style>
+<body>
+
+<ul class="topnav">
+  <li><a href="#" id="buttonleft"><span>Connection</span></a></li>
+  <li><a id="sitetitle">Goal 15: Life on Land</a></li>
+  <li style="float:right"><a href="#" id="buttonright"><span>Goal 13 page</span></a></li>
+</ul>
+
+<div class="paraimage"></div>
+
+<div class = "bar"></div>
+
+<div class = "content">
+	<div class="grid-container">
+	  <div class="grid-item item1">1</div>
+	  <div class="grid-item item2">hello everyone</div>
+	</div>
+</div>
+
+<div class = "bar"></div>
+
+<div class = "content">
+	<div class="grid-container">
+	  <div class="grid-item item1">1</div>
+	  <div class="grid-item item2">hello everyone</div>
+	</div>
+</div>
+
+<div class = "bar"></div>
+
+</body>
+<script>
+	var maincolor = "orange"
+</script>
+<script src="commonjs.js">
+</script>
+</html>

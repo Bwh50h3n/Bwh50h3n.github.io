@@ -6,19 +6,19 @@
 
 	body {margin:0; color: lightgray; font-family:"Open sans";}
 
-	html {background-color: lightgray;}
+	html {background-color: white;}
 
 	ul {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 	width: 100%;
-	height:100px;
-	background-color: white;
+	height:70px;
+	background-color: lightgray;
 	}
 
-	.buttonleft {
-	background-color: #FFFFFF;
+	#buttonleft {
+	background-color: lightgrey;
 	color:black;
 	text-align: center;
 	text-decoration: none;
@@ -26,14 +26,14 @@
 	font-size: 14px;
 	}
 
-	.buttonleft span {
+	#buttonleft span {
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
 	transition: 0.4s;
 	}
 
-	.buttonleft span:after {
+	#buttonleft span:after {
 	content: '\00ab';
 	position: absolute;
 	opacity: 0;
@@ -42,31 +42,31 @@
 	transition: 0.4s;
 	}
 
-	.buttonleft:hover span {
+	#buttonleft:hover span {
 	padding-left: 25px;
 	}
 
-	.buttonleft:hover span:after {
+	#buttonleft:hover span:after {
 	opacity: 1;
 	right: 0;
 	}
 
-	.buttonright {
-	background-color: #FFFFFF;
+	#buttonright {
+	background-color: lightgray;
 	color:black;
 	text-align: center;
 	display: inline-block;
 	font-size: 14px;
 	}
 
-	.buttonright span {
+	#buttonright span {
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
 	transition: 0.4s;
 	}
 
-	.buttonright span:after {
+	#buttonright span:after {
 	content: '\00bb';
 	position: absolute;
 	opacity: 0;
@@ -74,11 +74,11 @@
 	transition: 0.4s;
 	}
 
-	.buttonright:hover span {
+	#buttonright:hover span {
 	padding-right: 25px;
 	}
 
-	.buttonright:hover span:after {
+	#buttonright:hover span:after {
 	opacity: 1;
 	right: 0;
 	}
@@ -120,12 +120,38 @@
  	height:100px;
  	background-color: green;
  	font-size:36px;
-	}
+ 	}
+ 	#bar0{
+ 		
+ 	}
+ 	#bar1{
+
+ 	}
+ 	#bar2{
+
+ 	}
+ 	#bar3{
+
+ 	}
+ 	#bar4{
+
+ 	}
 	.contentbg{
 	text-align:left;
 	background-color: white;
 	width:100%;
 	height:500px;
+	}
+
+	.content {
+	margin-left:10%;
+	margin-right: 10%;
+	}
+
+	#footer {
+	width: 100%;
+	height:300px;
+	background-color: lightgray;
 	}
 
 	.grid-container {
@@ -168,30 +194,53 @@
 <body>
 
 <ul class="topnav">
-  <li><a href="#" class="buttonleft"><span>Goal 13 page</span></a></li>
+  <li><a href="#" id="buttonleft"><span>Goal 13 page</span></a></li>
   <li><a id="title">Goal 12: Responcible Consumption</a></li>
-  <li style="float:right"><a href="#" class="buttonright"><span>Goal 12 page</span></a></li>
+  <li style="float:right"><a href="#" id="buttonright"><span>Goal 12 page</span></a></li>
 </ul>
 
 <div class="paraimage"></div>
 
-<div class = "bar"></div>
+<div class = "bar" id = "bar0"></div>
 
-<div class="grid-container">
-  <div class="grid-item item1">1</div>
-  <div class="grid-item item2">hello everyone</div>
+<div class = "content">
+	<div class="grid-container">
+	  <div class="grid-item item1">1</div>
+	  <div class="grid-item item2">hello everyone</div>
+	</div>
+</div>
+
+<div class = "bar" id = "bar1"></div>
+
+<div class = "content">
+	<div class="grid-container">
+	  <div class="grid-item item1">1</div>
+	  <div class="grid-item item2">hello everyone</div>
+	</div>
 </div>
 
 <div class = "bar"></div>
 
-<div class="grid-container">
-  <div class="grid-item item1">1</div>
-  <div class="grid-item item2">hello everyone</div>
-</div>
 
 </body>
 <script>
-	var maincolor = "green"
+	document.getElementById("buttonleft").onclick = function() {openpage1()};
+
+	document.getElementById("buttonright").onclick = function() {openpage2()};
+
+	function openpage1(){
+		window.open("http://Bwh50h3n.github.io");
+	}
+
+	function openpage2(){
+		window.open("http://Bwh50h3n.github.io");
+	}
+
+	var maincolor = "red"
 	document.getElementById("title").style.color = maincolor;
+
+	var numbars = 4
+
+
 </script>
 </html>
