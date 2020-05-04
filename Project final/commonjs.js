@@ -3,11 +3,11 @@ document.getElementById("buttonleft").onclick = function() {openpage1()};
 	document.getElementById("buttonright").onclick = function() {openpage2()};
 
 	function openpage1(){
-		window.open("http://Bwh50h3n.github.io");
+		window.open(page1);
 	}
 
 	function openpage2(){
-		window.open("http://Bwh50h3n.github.io");
+		window.open(page2);
 	}
 
 	var bar = document.getElementsByClassName('bar');

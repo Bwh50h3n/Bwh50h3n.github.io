@@ -4,63 +4,140 @@
   <link rel="stylesheet" href="commoncss.css">
 </head>
 <style>
-	.grid-item {
-	  text-align: center;
-	  padding: 20px;
+	.button {
+  	background-color: #4CAF50;
+  	border: none;
+  	color: white;
+	font-size: 40px;
+	width:250px;
+	}
+
+	#sitetitle {
+	position: relative;
+	left: 500px;
+	color:white;
+	font-size: 20px;
+	font-family:"Open sans";
+	font-weight: bold;
+	}
+
+	.grid-container {
+	  display: grid;
+	  grid-template-columns: 20% 20% 20% 20% 10% 10%;
+	  grid-template-rows: 110px 110px 110px 110px 110px 110px;
+	  background-color: #FFFFFF;
+	  color: black;
+	  padding: 10px;
+
+	}
+	.target1{
+	  grid-column: 1/ span 1;
+	}
+
+	.target2{
+		grid-column: 4/ span 1;
+	}
+
+	.target1txt{
+		grid-column: 2/ span 2;
+	}
+
+	.target2txt{
+		grid-column: 4/ span 2;
+	}
+
+	#
+	.button {
+	  grid-column: 5/ span 2;
+	  grid-row: 1 / span 1;
+	}
+
+	.explain {
+	  grid-column: 5/ span 2;
+	  grid-row: 3 / span 5;
 	  font-size: 30px;
 	}
 
-	.item1 {
-	  grid-column: 1 / span 3;
-	  grid-row: 1/span 6;
-	}
-
-	.item2 {
-	  grid-column: 4/ span 3;
-	  grid-row: 1 / span 6;
-	}
-
 	.paraimage {
-	  background-image: url("images/1_Hydrogen.jpg");
-	  min-height: 500px; 
+	  position: relative;
+	  background-image: url("websiteimages/white.jpg");
+	  min-height: 600px; 
+	  margin-top:0px;
 	  background-attachment: fixed;
-	  background-position: center;
+	  background-position: center top;
 	  background-repeat: no-repeat;
 	  background-size: auto;
+	}
+	#interactimg {
+	position: relative;
+	background-image: url("websiteimages/Steak.jpg");
+	}
 	}
 </style>
 <body>
 <ul class="topnav">
-  <li><a href="#" id="buttonleft"><span>Goal 13 page</span></a></li>
-  <li><a id="sitetitle">Goal 12: Responcible Consumption</a></li>
-  <li style="float:right"><a href="#" id="buttonright"><span>Goal 12 page</span></a></li>
+  <li><a href="#" id="buttonleft"><span>Goal 16 page</span></a></li>
+  <li><a id="sitetitle">Goal 13, Climate action</a></li>
+  <li style="float:right"><a href="#" id="buttonright"><span>Connection</span></a></li>
 </ul>
 
 <div class="paraimage"></div>
+<div class="paraimage2"></div>
+<div class="bgcontent">
+	<h1 class="bannertxt">What is Goal 13?</h1>
+</div>
+<div class="content">
+	<h1>It aims to take urgent action to combat climate change and its impacts.</h1>
+	<p>Goal 13 aims to take action against human caused climate change. Climate change is a real and undeniable threat.The effects will be catastrophic unless we act now. Through commiting to take action against climate change, we can make the necessary changes to protect the planet. 
+<p>
+</div>
+<div class="bgcontent">
+	<h1 class="bannertxt">Targets of Goal 13</h1>
+</div>
+<div class="grid-container">
+	  <div class="grid-item interact" id="interactive">
+	  </div>
+	  <div class="grid-item button">
+	  	<button class = "button" id="Cowbtn" onclick= "play()">Start</button>
+	  </div>
+	  <div class="grid-item explain">
+	  	<p class= "bannersubtst"id="explaination">
+	  	</p>
+	  </div>
 
-<div class = "bar" id = "bar0"></div>
 
-<div class = "content">
-	<div class="grid-container">
-	  <div class="grid-item item1">1</div>
-	  <div class="grid-item item2">hello everyone</div>
-	</div>
 </div>
 
-<div class = "bar" id = "bar1"></div>
+<div>
+	<p class = "content">
+	As demonstraited, the problem with meat is that it is very inefficient. According to a study published in the journal Science, more than 80% of farmland is used for animal agriculture, yet the industry only produces 18% of global food calories. By so being inefficient, the meat industry uses/wastes massive amounts of resources. They emitting more greenhouse gasses and using up more water, harming the environment. The UN described it as "one of the most significant contributors to the most serious environmental problems, at every scale from local to global". Animal agriculture is responsible for <span class = "important">18% of total greenhouse gas emissions. </span>Animals are the primary emitter of methane,<span class = "important"> a greenhouse gas that traps 84 times more heat per ton than CO2.</span> According to the US Department of Agriculture, <span class = "important">80-90% of all water in the US is used in the growing and processing of meat. </span>The amount of resources used by this industry to produce so little is shocking.
+	</p>
+	<p class = "content">
+	A case against reducing the size of the meat industry is that it plays an important role in the economy of agriculture and offers a well-balanced diet. This is undoubtedly true for developing countries. However, first world countries have arrived at a point where its population is consuming far more meat than what is healthy. The following interective graphs records the average daily meat consumption. As seen, developed countries consume many times more meat than the gloabal average, with the United states and Austraia surpassing 300 grams a day. 
+	</p>
+	
+	<p align="center"><iframe class="iframe"src="https://ourworldindata.org/grapher/daily-meat-consumption-per-person?tab=chart&time=2013&country=AUS+CAN+CHN+European%20Union+USA+OWID_WRL">
+	</iframe></p>
 
-<div class = "content">
-	<div class="grid-container">
-	  <div class="grid-item item1">1</div>
-	  <div class="grid-item item2">hello everyone</div>
-	</div>
+	<p class = "content">
+	 Meat consumption in this quantity comes with increased risks for heart disease and stroke, not to mention how it contributes to the obesity problem. It is doing more harm than good.
+	</p>
+	<p class = "content">
+	<span class="important">In first world counties, the meat industry is using 80% of farmland, up to 90% of water, producing 18% of global greenhouse gas emissions (much of which are of an agent 84 times more powerful than CO2), So a neat thing to consider is to in your next meal, and for meals to come is to eat a little less meat, and help humanity in our climate change “damage control” efforts.</span>
+	</p> 
 </div>
 
-<div class = "bar"></div>
-
+<div class="spacebar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
 </body>
 <script>
-	var maincolor = "orange"
+	var maincolor = "#48773E"
+	var page1 = "https://bwh50h3n.github.io/Project%20final/goal16.html"
+	var page2 = "https://bwh50h3n.github.io/Project%20final/connection.html"
+</script>
+<script src="cowgame.js">
 </script>
 <script src="commonjs.js">
 </script>
