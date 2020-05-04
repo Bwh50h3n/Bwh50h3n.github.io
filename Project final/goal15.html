@@ -4,64 +4,220 @@
   <link rel="stylesheet" href="commoncss.css">
 </head>
 <style>
-	.grid-item {
-	  text-align: center;
-	  padding: 20px;
-	  font-size: 30px;
+	h2 {
+		font-size: 18px;
+		text-align: left;
+		margin-left: 50px
+	}
+	#sitetitle {
+	position: relative;
+	left: 500px;
+	color:white;
+	font-size: 20px;
+	font-family:"Open sans";
+	font-weight: bold;
 	}
 
-	.item1 {
-	  grid-column: 1 / span 3;
-	  grid-row: 1/span 6;
+	.goals-container {
+	  display: grid;
+	  margin-left: 10%;
+	  margin-right:10%;
+	  margin-top:100px;
+	  grid-template-columns: 128px 250px 250px 128px 250px 250px;
+	  grid-template-rows: 300px 300px 300px 300px 300px;
+	  background-color: #FFFFFF;
+	  color: black;
+
+	}
+	.target1{
+	  grid-column: 1/ span 1;
+	  margin-top:50px;
 	}
 
-	.item2 {
-	  grid-column: 4/ span 3;
-	  grid-row: 1 / span 6;
+	.target2{
+		grid-column: 4/ span 1;
+	    margin-top:50px;
+	}
+
+	.target1txt{
+		grid-column: 2/ span 2;
+		width:300px;
+	}
+
+	.target2txt{
+		grid-column: 5/ span 2;
+		width:300px;
+	}
+
+	.data-container {
+	  display: grid;
+	  margin-left: 10%;
+	  margin-right:10%;
+	  margin-top:100px;
+	  grid-template-columns: 40% 60%;
+	  grid-template-rows: 50px 500px;
+	  background-color: #FFFFFF;
+	  color: black;
+	}
+
+	.dataheader {
+	grid-column: 1/ span 1;
+	grid-row:1/ span 1;
+	color:white;
+	}
+
+	.dataframe {
+	grid-column: 2/ span 1;
+	grid-row:1/ span 2;
+	}
+
+
+	.datainfo {
+	grid-column: 1/ span 1;
+	grid-row:2/ span 1;
+	margin-top:100px;
 	}
 
 	.paraimage {
-	  background-image: url("images/1_Hydrogen.jpg");
-	  min-height: 500px; 
+	  position: relative;
+	  background-image: url("websiteimages/white copy 2.jpg");
+	  min-height: 600px; 
+	  margin-top:0px;
 	  background-attachment: fixed;
-	  background-position: center;
+	  background-position: center top;
 	  background-repeat: no-repeat;
 	  background-size: auto;
 	}
 </style>
 <body>
-
 <ul class="topnav">
   <li><a href="#" id="buttonleft"><span>Connection</span></a></li>
-  <li><a id="sitetitle">Goal 15: Life on Land</a></li>
-  <li style="float:right"><a href="#" id="buttonright"><span>Goal 13 page</span></a></li>
+  <li><a id="sitetitle">Goal 15, life on land</a></li>
+  <li style="float:right"><a href="#" id="buttonright"><span>Goal 13</span></a></li>
 </ul>
 
 <div class="paraimage"></div>
+<div class="paraimage2"></div>
+<div class="bgcontent">
+	<h1 class="bannertxt">What is Goal 15?</h1>
+</div>
+<div class="content">
+	<h1>Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss.</h1>
+	<p>Goal 15 aims to take action to protect the ecosystems, animals, and plants. It aims to tackle the problems of deforestation, desertification, poaching, and loss of animal habitate. 
+<p>
+</div>
+<div class="bgcontent">
+	<h1 class="bannertxt">Targets of Goal 15</h1>
+</div>
+<div class="goals-container">
+	  <div class="target1"> 
+	  	<img src="websiteimages/target151.png">
+	  </div>
 
-<div class = "bar"></div>
+	  <div class="target1txt">
+	  	<h2><b>CONSERVE AND RESTORE TERRESTRIAL AND FRESHWATER ECOSYSTEMS</b></h2>
+	  	<p class=content>Ensure the conservation, restoration and sustainable use of terrestrial and inland freshwater ecosystems and their services</p>
+	  </div>
 
-<div class = "content">
-	<div class="grid-container">
-	  <div class="grid-item item1">1</div>
-	  <div class="grid-item item2">hello everyone</div>
-	</div>
+	  <div class="target2"> 
+	  	<img src="websiteimages/target152.png">
+	  </div>
+	  <div class="target2txt">
+	  	<h2><b>END DEFORESTATION AND RESTORE DEGRADED FORESTS</b></h2>
+	  	<p class=content>Stop deforestation, restore them, and manage forests sutainably.</p>
+	  </div>
+	  <div class="target1"> 
+	  	<img src="websiteimages/target153.png">
+	  </div>
+
+	  <div class="target1txt">
+	  	<h2><b>END DESERTIFICATION AND RESTORE DEGRADED LAND</b></h2>
+	  	<p class=content>Combat desertification, and restore degraded land.</p>
+	  </div>
+
+	  <div class="target2"> 
+	  	<img src="websiteimages/target154.png">
+	  </div>
+
+	  <div class="target2txt">
+	  	<h2><b>ENSURE CONSERVATION OF MOUNTAIN ECOSYSTEMS</b></h2>
+	  </div>
+
+	  <div class="target1"> 
+	  	<img src="websiteimages/target155.png">
+	  </div>
+
+	  <div class="target1txt">
+	  	<h2><b>PROTECT BIODIVERSITY AND NATURAL HABITATS</b></h2>
+	  	<p class=content>Protect biodiversity and restore lost animal habitats.</p>
+	  </div>
+
+	  <div class="target2"> 
+	  <img src="websiteimages/target156.png">
+	  </div>
+
+	  <div class="target2txt">
+	  	<h2><b>PROMOTE ACCESS TO GENETIC RESOURCES AND FAIR SHARING OF THE BENEFITS</b></h2>
+	  	<p class=content></p>
+	  </div>
+
+	  <div class="target1"> 
+	  	<img src="websiteimages/target157.png">
+	  </div>
+
+	  <div class="target1txt">
+	  	<h2><b>ELIMINATE POACHING AND TRAFFICKING OF PROTECTED SPECIES</b></h2>
+	  </div>
+
+	  <div class="target2"> 
+	  	<img src="websiteimages/target158.png">
+	  </div>
+
+	  <div class="target2txt">
+	  	<h2><b>PREVENT INVASIVE ALIEN SPECIES ON LAND AND IN WATER ECOSYSTEMS</b></h2>
+	  </div>
+
+	  <div class="target1"> 
+	  	<img src="websiteimages/target159.png">
+	  </div>
+
+	  <div class="target1txt">
+	  	<h2><b>INTEGRATE ECOSYSTEM AND BIODIVERSITY IN GOVERNMENTAL PLANNING</b></h2>
+	  	
+	  </div>
 </div>
 
-<div class = "bar"></div>
-
-<div class = "content">
-	<div class="grid-container">
-	  <div class="grid-item item1">1</div>
-	  <div class="grid-item item2">hello everyone</div>
-	</div>
+<div class="bgcontent">
+	<h1 class="bannertxt">How are we doing?</h1>
 </div>
 
-<div class = "bar"></div>
+<div class="data-container">
+	<div class="dataheader bgcontent"><h2><b>Forest area change rate</b></h2></div>
+	<div class="dataframe"><iframe class= "iframe" src="https://ourworldindata.org/grapher/protected-terrestrial-biodiversity-sites">
+	</iframe></div>
+	<div class="datainfo content"> This map/graph shows what percentage of important ecosystems and habitats are being protected. There is a very visible effort being made to protect more and more land and their biodiversity.</div>
+</div>
 
+<div class="data-container">
+	<div class="dataheader bgcontent"><h2><b>At risk for extinction</b></h2></div>
+	<div class="dataframe"><iframe class= "iframe" src="https://ourworldindata.org/grapher/red-list-index">
+	</iframe></div>
+	<div class="datainfo content">on this map, the red areas are where most species are safe, while the orange ones are of areas where animals are going extinct. There are come worrying areas on the map such as Mexico and India.</div> 
+</div>
+
+
+
+<div class="spacebar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
 </body>
 <script>
-	var maincolor = "orange"
+	var maincolor = "#56BA2E"
+	var page1 = "https://bwh50h3n.github.io/Project%20final/goal16.html"
+	var page2 = "https://bwh50h3n.github.io/Project%20final/connection.html"
+</script>
+<script src="cowgame.js">
 </script>
 <script src="commonjs.js">
 </script>
