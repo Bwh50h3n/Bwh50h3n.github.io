@@ -3,7 +3,7 @@
 	var explain2 = "A Cow comes over<br>MOO MOO<br/> Munch Munch"
 	var explain25 = "<br>MOO MOO<br/> *The Cow is eating"
 	var explain3 = "The Cow burns energy to stay alive"
-	var explain4 = "now you are left with only 1 lighning bolt of energy which you can get from eating the Cow"
+	var explain4 = "now you are left with only 1 lightning bolt of energy which you can get from eating the Cow"
 	var explain5 = "You just lost 5 lighning bolts worth of energy (not stonks)"
 
 	function seq1(){

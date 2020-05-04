@@ -29,6 +29,12 @@ document.getElementById("buttonleft").onclick = function() {openpage1()};
   	for(i = 0; i < topnav.length; i=i+1) {
     	topnav[i].style.backgroundColor = maincolor;
   	}
+
+  	var footer = document.getElementsByClassName('footer');
+  	for(i = 0; i < footer.length; i=i+1) {
+    	footer[i].style.backgroundColor = maincolor;
+  	}
+
 	document.getElementById("buttonright").style.backgroundColor = maincolor;
 	document.getElementById("buttonleft").style.backgroundColor = maincolor;
 	

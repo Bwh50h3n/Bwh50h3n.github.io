@@ -175,10 +175,11 @@ font-size:18px;
 text-align: center
 }
 
-#footer {
-width: 100%;
-height:300px;
-background-color: lightgray;
+.footer{
+text-align: left;
+left:20px;
+color:white;
+font-size:20px;
 }
 
 .iframe{
