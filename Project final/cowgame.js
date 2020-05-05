@@ -5,6 +5,7 @@
 	var explain3 = "The Cow burns energy to stay alive"
 	var explain4 = "now you are left with only 1 lightning bolt of energy which you can get from eating the Cow"
 	var explain5 = "You just lost 5 lighning bolts worth of energy (not stonks)"
+	var explain6= "Haha, you've been tricked, this was not about cows eating grass; it was a demontraition of why animals aren't very efficient and sustainable food sources!"
 
 	function seq1(){
 		console.log(numpress)
@@ -53,6 +54,9 @@
 		document.getElementById("Cowbtn").innerHTML = "Back"
 		document.getElementById("explaination").innerHTML = explain5;
 		document.getElementById("interactive").style.backgroundImage = "url('websiteimages/not_stonks.png')";
+		setTimeout(function(){
+					document.getElementById("explaination").innerHTML = explain6;
+				}, 2000);
 		numpress=numpress-5
 	}
 	function play(){
